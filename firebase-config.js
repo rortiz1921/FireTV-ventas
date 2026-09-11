@@ -1,5 +1,5 @@
-const firebaseConfig = {
-  apiKey: "AIzaSyAm9WdlVOW9KEWoIPaqOVZxQhe0ir047x8",
+window.FIREBASE_CONFIG = {
+  apiKey: "COPIA_AQUI_TU_API_KEY",
   authDomain: "firetv-782bd.firebaseapp.com",
   projectId: "firetv-782bd",
   storageBucket: "firetv-782bd.firebasestorage.app",

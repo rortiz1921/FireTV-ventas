@@ -1,5 +1,5 @@
 window.FIREBASE_CONFIG = {
-  apiKey: "AIzaSyAm9WdlVOW9KEWoIPaqOVZxQhe0ir047x8",
+  apiKey: "AIzaSyAm9W7dV0W9KFKWoIPaqOVZxQhe0iB47x8",
   authDomain: "firetv-782bd.firebaseapp.com",
   projectId: "firetv-782bd",
   storageBucket: "firetv-782bd.firebasestorage.app",

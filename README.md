@@ -1,19 +1,21 @@
 # Fire TV Ventas — Firebase + Vercel
 
-## 1. Firebase
-- Crea/elige tu proyecto.
-- Activa Authentication > Sign-in method > Email/Password.
-- Crea Firestore Database.
-- Agrega una Web App y copia su firebaseConfig.
-- Copia `firebase-config.example.js` como `firebase-config.js` y pega los valores.
+Este proyecto ya está configurado para el proyecto Firebase `firetv-782bd`.
 
-## 2. GitHub
-Sube `index.html` y `firebase-config.js` al repositorio.
+## Subir a GitHub
+1. Crea un repositorio nuevo en GitHub.
+2. Sube estos archivos: `index.html` y `firebase-config.js`.
+3. No cambies los nombres.
 
-## 3. Vercel
-Importa el repositorio desde Vercel y pulsa Deploy. No hace falta build command.
+## Publicar en Vercel
+1. Entra a Vercel y pulsa Add New Project.
+2. Importa el repositorio de GitHub.
+3. Pulsa Deploy.
+4. No necesitas Build Command.
 
-## 4. Seguridad
-Antes de usar datos reales, configura reglas de Firestore para que cada usuario solo pueda leer/escribir `users/{uid}/...` cuando `request.auth.uid == uid`.
+## Firebase
+La aplicación usa Authentication (correo/contraseña) y Cloud Firestore.
+Las reglas recomendadas son las que protegen `users/{uid}/...` para que cada usuario solo acceda a sus propios datos.
 
-La app usa Firebase Authentication + Firestore y conserva la copia local como respaldo.
+## Importante
+El archivo `firebase-config.js` contiene configuración pública de una app web de Firebase; no es una clave privada de servidor. Nunca subas claves de cuentas de servicio (`serviceAccountKey.json`) al repositorio.
